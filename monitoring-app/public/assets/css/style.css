@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    background-color: #CCCCCC;
+}
+
+.content{
+    /* min-height: 100vh; */
+    width: 100%;
+}
+
+#side_nav{
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.sidebar-txt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+hr.h-color{
+    background: #eee;
+}
+
+.sidebar li.active {
+    /* background: #123244; */
+    border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover{
+    color:#eee;
+}
+
+.sidebar li a{
+    color: #eee;
+}
+.sidebar li a:hover{
+    background-color: #123244;
+}
+
+.db a:hover{
+    background-color: #CCCCCC;
+}
+
+@media (max-width:767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    #side_nav.active{
+        margin-left: 0;
+    }
+    .menu {
+        height: 150px;
+        background-color: #414141;
+        margin-top: 70px;
+    }
+    #home-menu{
+        width: 350px;
+        height: 300px;
+        background-color: blue;
+        
+    }
+}
+
+.time-txt {
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+.auth-txt{
+    font-family: 'poppins', sans-serif;
+}
+
+.info-txt{
+    font-family: 'Lemon/Milk', sans-serif;
+    color: #000000;
+}
+a:hover{
+    color: #123244 ;
+}
+.info-sec {
+    width: 100%;
+    border-radius: 30px;
+    background-color: #a3a3a3;
+    z-index: -1;
+}
+.sensor-x{
+    /* width: ; */
+    background-color: red;
+}
+.data {
+    display: none;
+}
+
+/* .dataTb{
+    width: 100%;
+} */
+.home-menu{
+    width: 1000px;
+    height: 300px;
+    background-color: blue;
+    
+}
+.menu {
+    background-color: #000000;
+    color: white;
+}
+
+.menu:hover{
+    background-color: #8e8a8a;
+}
+.menu-info {
+    color: white;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 35px;
+    text-decoration: none;
+    font-family: 'Lemon/Milk';
+    border: none;
+}
+.title-txt{
+    font-size: 14px;
+}
+.menu-info:hover{
+    background-color: #2f2525;
+    color: white;
+    transition: all 0.5s;
+}
+.bdy-menu{
+    height: 130px;
+}
+    
+#map{
+    width: 600px;
+    height: 300px;
+}
+.canvas-style{
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.data-box{
+    /* margin-top: -50px; */
+    /* font-size: 10px; */
+    width: 100%;
+    height: 400px;
+    margin-top: -16.8px;
+    background-color: #a3a3a3;
+    border-radius: 10px;
+}
+.data-box p {
+    font-family: 'lemon/milk';
+    text-align: center;
+    
+}
+.nav-bar {
+    /* padding: 4px 3px; */
+    width: 100%;
+    /* background-color: red; */
+    border-radius: 10px;
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* background-color: #a3a3a3; */
+
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a{
+    font-size: 8px;
+    font-family: 'lemon/milk';
+    background-color: #CCCCCC;
+    display: block;
+    text-decoration: none;
+    border-radius: 100px 10px;
+    color: black;
+    padding: 5px 5px;
+    transition: 0.25s ease;
+}
+
+.nav-bar ul li a i{
+    font-size: 10px;
+}
+.nav-bar ul li a:hover{
+    color: white;
+    transition: 0.25s ease;
+    /* background-color: purple; */
+}
+
+.nav-bar ul li a.active{
+    /* border-radius: 10px; */
+    background-color: #a3a3a3;
+    /* border: 3px solid grey; */
+}
+
+.data-title{
+    margin: 0;
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-print{
+    /* background-color: blue; */
+    font-family: 'lemon/milk';
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 40px;
+    transition: 0.4s ease;
+}
+
+.btn-print:hover{
+    transition: 0.4s ease;
+    color: blue;
+}
+
+.dataTb{
+    display: none;
+}
+
+.page-link{
+    background-color: green;
+}
+
+
+
+
+/* .home-sec{
+    width: 60%;
+    
+} */
+
+/* .d-sens-1{
+    width: 180px;
+    height: 100px;
+    background-color: darkgray;
+    
+} */
+
+/* .nav-pills li a:hover{
+    background-color: darkgreen;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+}
+.content-1 {
+    width: 100%;
+}
+
+.clm-wdt{
+    width: 220px;
+}
+
+/* .nav-height{
+;
+} */
+/* .logut-txt{
+    font-size: 25px;
+}
+
+.graph-sec{
+    background-color: darkslategray;
+    width: 750px;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.map-sec{
+    background-color: darkslategray;
+    width: 450px;
+    border-radius: 20px;
+}
+
+.status-sec{
+    width: 500px;
+    height: 350px;
+}
+
+.comp-stats{
+    width: 40%;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.adds-sec{
+    background-color: darkslategrey;
+    width: 450px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.addon-item{
+    background-color: green;
+    width: 175px;
+    height: 100px;
+    border-radius: 20px;
+}
+.info-sec {
+    width: 100%;
+    border-radius: 30px;
+    background-color: #a3a3a3;
+    z-index: -1;
+}
+.info-txt{
+    font-family: 'Lemon/Milk', sans-serif;
+}
+
+.battery-stats-sec{
+    width: 100%;
+    height: 200px;
+}
+
+.title-font{
+    font-family: 'Lemon/Milk', sans-serif;
+  }
+.bat-stats{
+    width: 250px;
+    background-color: white;
+    color: black;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.btn-submit{
+    background-color: rgb(48, 158, 12);
+    color: white;
+    font-family: 'Lemon/Milk';
+}
+
+.bat-stats-1{
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.bat-graph{
+    width: 98%;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.th-txt{
+    font-family: 'Lemon Milk';
+    border-radius: 20px;
+}
+
+.time-txt {
+    font-family: 'poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.icon-margin {
+    margin-top: 25px;
+}
+.icon-margin-2 {
+    margin-top: 25px;
+}
+
+
+
+
+@media screen and (max-width:320px) {
+    body{
+        width: 100%;
+        background-color: #CCCCCC ;
+    }
+} */
